@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:background="@color/teal_200"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER ID"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_user_id"
+            android:hint="user" />
+
+        <TextView
+            android:id="@+id/tv_user_rw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_id"
+            android:layout_marginTop="20dp"
+            android:text="USER RW"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_user_rw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/et_user_id"
+            android:layout_toRightOf="@id/tv_user_rw"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="RW"/>
+        <Button
+            android:id="@+id/b_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_user_rw"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
